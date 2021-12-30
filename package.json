@@ -4,24 +4,40 @@
   "description": "",
   "scripts": {
     "start": "nodemon server/index.js",
-    "dev": "webpack-dev-server --mode=development && nodemon server/index.js",
+    "dev": "webpack-dev-server --mode=development && nodemon ./server/index.js ",
     "build": "webpack --mode development",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Yash Bansal",
   "license": "ISC",
   "dependencies": {
+    "cors": "^2.8.5",
     "express": "^4.17.2",
+    "nodemon": "^2.0.15",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-bootstrap": "^0.26.0",
+    "simple-json-db": "^1.2.3",
     "webpack-dev-server": "^4.7.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.5",
+    "@babel/plugin-transform-runtime": "^7.16.5",
     "@babel/preset-env": "^7.16.5",
     "@babel/preset-react": "^7.16.5",
     "babel-loader": "^8.2.3",
+    "bootstrap": "^5.1.3",
+    "css-loader": "^6.5.1",
+    "eslint": "^8.5.0",
+    "eslint-webpack-plugin": "^3.1.1",
     "html-webpack-plugin": "^5.5.0",
+    "less": "^4.1.2",
+    "less-loader": "^10.2.0",
+    "react-bootstrap": "^2.0.4",
+    "react-router-dom": "^6.2.1",
+    "sass": "^1.45.1",
+    "sass-loader": "^12.4.0",
+    "style-loader": "^3.3.1",
     "webpack": "^5.65.0",
     "webpack-cli": "^4.9.1"
   }
